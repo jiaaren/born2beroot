@@ -1,0 +1,9 @@
+	#Architecture: Linux jkhong42 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
+	#CPU physical: 1
+#Memory Usage : 76/987MB (7.70%)
+#Last boot: 2021-05-26 10:42
+#LVM use: yes
+#TCP Connections: 1 ESTABLISHED
+#User log: 2
+#Network: IP 10.0.2.15 (08:00:27:33:b4:dd)
+#Sudo: 10 cmd
