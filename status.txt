@@ -1,9 +1,13 @@
-	#Architecture: Linux jkhong42 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
-	#CPU physical: 1
-#Memory Usage : 76/987MB (7.70%)
-#Last boot: 2021-05-26 10:42
+#Architecture: Linux jkhong42 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
+#CPU physical: 1
+#vCPU: 1
+#Memory Usage : 79/987MB (8.00%)
+/dev/mapper/jkhong42--vg-root   2825156 1156752   1505180  44% /
+/dev/mapper/jkhong42--vg-home   3804880   16244   3575644   1% /home
+/dev/sda1                        482922   50764    407224  12% /boot
+#Last boot: 2021-05-26 15:18
 #LVM use: yes
 #TCP Connections: 1 ESTABLISHED
 #User log: 2
 #Network: IP 10.0.2.15 (08:00:27:33:b4:dd)
-#Sudo: 10 cmd
+#Sudo: 15 cmd
