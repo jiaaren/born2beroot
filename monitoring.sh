@@ -13,8 +13,7 @@ cat /proc/cpuinfo | grep processor | wc -l | awk '{printf "#vCPU: %d\n", $0}'
 free -m | awk 'NR == 2 {printf "#Memory Usage : %d/%dMB (%.2f%%)\n", $3, $2, $3/$2*100}'
 
 #Disk usage
-df --block-size=1048576 --total | grep '^/dev/' \
-	| awk '{total_space+=$2}{used_space+=$3}END{printf "#Disk Usage: %.1f/%.1fGb (%.f%%)\n", used_space/1000, total_space/1000, used_space/total_space*100}'
+df -h --block-size=1048576 --total | grep total | awk '{printf "#Disk Usage: %.1f/%.1fGb (%.f%%)\n", $3/1000, $2/1000, $3/$2*100}'
 
 #CPU usage
 top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" \
