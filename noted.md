@@ -482,7 +482,7 @@ Extracting
   - mkdir <extraction folder>
 - run inside extraction folder
   - borg extract <backup folder>::<backup name> <source folder>
-  - borg extract ~/backup::<backup name> ~/downloads
+  - borg extract ~/backup::<backup name> home/jkhong/downloads
 Checking file size
 -  du -sh <filename>
 
