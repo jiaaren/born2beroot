@@ -461,9 +461,17 @@ Bonuses
   - php -v
   - 127.0.0.1/wp
 
-
-
 Borg
+- deduplication (eliminating duplicate or redundant information)
+- each file is split into a number of variable length chunks
+- only chunks that have never been seen before are added to the repository
+
+Advantages
+- file and directory names can be the same
+- if big file changes a little, only minor changes need to be made
+- stuff may get shifted but still undergo deduplication
+- speed of backup, easy installation, free and open source software
+   
 Download
 - apt-get install borgbackup
 Creating backup folder
