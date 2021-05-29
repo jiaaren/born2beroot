@@ -452,7 +452,9 @@ Monitoring
 - crontab -e
 - * * * * * sleep 30;
 - */10 * * * * *
-
+   /etc/init.d/cron stop
+/etc/init.d/cron start
+   
 Bonuses
 - partitions - lsblk
 - Wordpress
@@ -495,3 +497,5 @@ Checking file size
 -  du -sh <filename>
 
 du -h <filename>
+
+   
