@@ -413,13 +413,17 @@ User
 - sudo usermod -aG <group> <username>
 - sudo groupadd <new_groupname>
 
+- sudo chage -l <username>
+   
 Hostname and partitions
 - hostname
 - changing (https://linuxize.com/post/how-to-change-hostname-on-debian-10/)
   - sudo hostnamectl set-hostname <new hostname>
   - sudo vim /etc/hosts
 Explanation of lvm
-
+- resize/ w/o losing information
+- physical partition may result in data corrput
+   
 Sudo
 -installed
 - sudo usermod -aG sudo jiaren
